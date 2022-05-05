@@ -91,3 +91,18 @@ $header-size: 100px;
   }
 } */
 </style>
+
+<script>
+export default {
+  data() {
+    return {
+      cardList: {},
+    }
+  },
+  mount() {
+    if(localStorage.getItem('card1')) {
+      this.cardList
+    }
+  },
+}
+</script>
